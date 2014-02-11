@@ -17,6 +17,8 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
+gem 'haml-rails'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -39,6 +41,10 @@ group :test, :development do
   gem 'database_cleaner'
   gem 'rspec'
   gem 'rspec-rails'
+end
+
+group :test do
+  gem 'launchy'
 end
 
 # Use ActiveModel has_secure_password
